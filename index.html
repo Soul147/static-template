@@ -1,12 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+<html lang="en" dir="ltr" locale="en_us" user-region="north-america">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>About | Dyspute</title>
+  <meta name="author" content="Dyspute">
+  <meta property="og:type" content="website">
+  <meta name="title" content="About | Dyspute">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="315">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta property="og:title" content="About | Dyspute">
+  <meta property="og:url" content="//www.dyspute.com/">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta property="twitter:title" content="About | Dyspute">
+  <meta property="google:search-sre-monitor" content="en_us">
+  <meta property="twitter:url" content="https://dyspute.com">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta property="og:image" content="https://dyspute.com/assets/images/dyspute-laptop-dark.png">
+  <meta name="description" content="Dyspute is an app made for debating, where you can share your opinions freely with the world.">
+  <meta property="og:description" content="Dyspute is an app made for debating, where you can share your opinions freely with the world.">
+  <meta name="keywords" content="dyspute,politics,republican,democratic,debating,startup,debate app,debate apps,home page,dyspute home page">
+  <meta property="twitter:description" content="Dyspute is an app made for debating, where you can share your opinions freely with the world.">
+  <meta property="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/dyspute.appspot.com/o/app-images%2Flaptop.png?alt=media&token=cba43b42-f07b-4436-a887-14b70c8d8be0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/master.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/dyspute.appspot.com/o/app-icons%2Ffavicon.ico?alt=media&token=a587d40b-3318-4024-b3a4-a43f73994134" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body data-theme="light">
+  <div class="background animated fadeIn">
+    <div id="menu"></div>
+    <header>
+      <img src="https://firebasestorage.googleapis.com/v0/b/dyspute.appspot.com/o/app-images%2Fhero-icon.svg?alt=media&token=72980b16-958c-4d1c-aa21-d746cc100eb0" id="hero-icon" alt="Women looking at mobile device.">
+      <h1 id="catch-phrase">Get Your Opinions Out There</h1>
+      <p>Whether it’s getting your own opinions out there or to see new perspectives on topics relevant to our current world, Dyspute provides a safe platform to do so.</p>
+      <a href="https://dyspute.com/469.html"><button>Sign Up</button></a>
+    </header>
+  </div>
+  <section class="tabs">
+    <div class="tabs-container">
+      <div class="tab-item tab-border" id="tab-1">
+        <i class="material-icons">chrome_reader_mode</i>
+        <p>Choose A Topic</p>
+      </div>
+      <div class="tab-item" id="tab-2">
+        <i class="material-icons">how_to_vote</i>
+        <p>Vote</p>
+      </div>
+      <div class="tab-item" id="tab-3">
+        <i class="material-icons">reply</i>
+        <p>Reply</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="tab-content">
+      <div class="tabs-container">
+        <div id="tab-1-content" class="tab-content-item show">
+          <div class="tab-1-content-inner">
+            <div>
+              <h2>Choose A Topic</h2>
+              <p>Every week new topics are added to the topics board. Simply choose a topic that interests you and click
+                on it to Dyspute!</p>
+              <a href="https://dyspute.com/469.html"><button>View Topics</button></a>
+            </div>
+            <img src="https://firebasestorage.googleapis.com/v0/b/dyspute.appspot.com/o/app-images%2Flaptop.png?alt=media&token=cba43b42-f07b-4436-a887-14b70c8d8be0" id="screen"
+              alt="Macbook Pro with the Dyspute website displayed.">
+          </div>
+        </div>
+        <div id="tab-2-content" class="tab-content-item">
+          <div class="tab-2-content-inner">
+            <div>
+              <h2>Vote</h2>
+              <p>Each user post is color-coded depending on how liked or disliked it is. In other words, a post that
+                many people agree with will be dark green, while a post that many people disagree with will be red.</p>
+            </div>
+            <div class="card demo-post" style="text-align:left;">
+              <img src="https://firebasestorage.googleapis.com/v0/b/dyspute.appspot.com/o/app-icons%2Fround-icon.png?alt=media&token=fafddfda-f614-4ede-b044-d3f151f0d3cd" alt="" class="pfp">
+              <span class="verified">Dyspute ⚜</span>
+              <span class="timestamp">- 1 hour ago</span>
+              <p id="postcontent">Try clicking the agree and disagree icons to see how the post color changes!</p>
+              <div class='options-bar'>
+                <span class='voting' id='react'>➕</span>
+                <span class='voting' id='likes'></span>
+                <span class='voting'>0 Agree | </span>
+                <span class='voting' id='react'> ➖ </span>
+                <span class='voting' id='dislikes'></span>
+                <span class='voting'>0 Disagree</span>
+                <div class=".disabled options"><i class="material-icons options-trigger">more_vert</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-3-content" class="tab-content-item">
+          <div class="tab-3-content-inner">
+            <div>
+              <h2>Reply</h2>
+              <p>See an opinion that you want to comment on? Reply to the user and explain your perspective. Replying to
+                a topic is easy: simply use the text editor to type a reply out, then click post!</p>
+            </div>
+            <center>
+              <div id="textarea-container">
+                <textarea maxlength="69" placeholder="Try typing here..."></textarea>
+                <a href="https://dyspute.com/469.html"><button>Sign Up!</button></a>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div id="helping-world">
+      <img src="https://firebasestorage.googleapis.com/v0/b/dyspute.appspot.com/o/app-images%2Fcharity.jpeg?alt=media&token=21813825-bb3a-43fa-914c-e0e400ee28d8">
+      <div id="helping-world-content">
+        <p><b>Committed To Helping The World</b></p>
+        <hr>
+        <h2>We plan to donate a portion of our revenue for good causes.</h2>
+        <a href="#charity" class="disabled">How we plan to help</a>
+      </div>
+    </div>
+    <h2>Interested In Helping Us?</h2>
+    <div class="row" id="info">
+      <div class="column">
+        <div class="card wow zoomIn" data-wow-offset=25>
+          <h2>Sign up for our newsletter!</h2>
+          <p>Get extra perks!</p>
+          <center><a href="https://goo.gl/forms/X2oWuxxJL6QQ7AcG3" target="_blank"><button>Count Me In!</button></a>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card wow zoomIn" data-wow-offset=25>
+          <h2>Donate</h2>
+          <p>Keep us running!</p>
+          <center>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KJMLLTQJHGRNS&currency_code=USD&source=url">
+             <button title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">Donate</button>
+            </a>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card wow zoomIn" data-wow-offset=25>
+          <h2>Careers</h2>
+          <p>Join the Dyspute team!</p>
+          <center><a href="https://goo.gl/forms/ffrOV8hthxAvAP0M2" target="_blank"><button>View Jobs</button></a>
+          </center>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer"></footer>
+  <div id="cookie-warning"></div>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://www.googletagmanager.com/gtag/js?id=UA-134590338-1" async defer></script>
+  <script type="text/javascript" src="https://dyspute.com/scripts/elements.js"></script>
+  <script type="text/javascript" src="https://dyspute.com/scripts/index.js"></script>
+</body>
+
 </html>

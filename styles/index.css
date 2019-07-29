@@ -1,0 +1,162 @@
+/* About Section */
+#hero-icon {
+	width: 200px;
+	height: auto;
+}
+.tabs {
+	border-right: none;
+	background: var(--light-3);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tabs i {
+	opacity: 0.5;
+	display: flex;
+	font-size: 60px;
+	justify-content: center;
+	transition-duration: 0.2s;
+}
+
+.tabs p {
+	display: none;
+}
+
+.tabs .tabs-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.tabs .tabs-container > div {
+	cursor: pointer;
+	padding: 1.5rem 0;
+}
+
+.tab-border {
+	border-bottom: 2px solid var(--blue);
+}
+
+.tab-border i {
+	opacity: 1;
+}
+
+#screen {
+	width: 100%;
+	height: auto;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+	opacity: 0;
+}
+#helping-world {
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+	margin-bottom: 2%;
+	position: relative;
+	border-radius: 6px;
+	display: inline-block;
+}
+
+#helping-world img {
+	transition: all 1s;
+}
+
+#helping-world-content {
+	top: 50%;
+	left: 50%;
+	text-align: left;
+	position: absolute;
+	color: var(--light-1);
+	transform: translate(-50%, -50%);
+}
+
+#helping-world-content hr {
+	border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#helping-world-content a {
+	color: var(--light-1);
+}
+#demo-post {
+	margin: 4%;
+	padding: 4%;
+	border: none;
+	border: 0 solid;
+	text-align: left;
+	border-radius: 6px;
+	background: var(--light-2);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+/* Team Section */
+.team-background {
+	min-height: 100vh;
+	background: url('https://images.unsplash.com/photo-1513735429658-5b2072a1cee6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80')
+		no-repeat center;
+	background-size: cover;
+	overflow-x: hidden;
+}
+.about-text a {
+	color: var(--dark-1);
+}
+/* Legal Page */
+#legal-content-menu ul {
+	padding-left: 4%;
+}
+#legal-content-menu {
+	padding: 4%;
+	border-radius: 6px;
+	background: var(--light-2);
+}
+#legal-body {
+	padding: 4%;
+	text-align: left;
+	border-radius: 6px;
+	background: var(--light-3);
+}
+
+/* Responsivness */
+@media only screen and (min-width: 550px) {
+	.tabs p {
+		display: block;
+	}
+}
+@media only screen and (min-width: 1050px) {
+	#tab-1-content .tab-1-content-inner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+		align-items: center;
+		justify-content: center;
+	}
+	#tab-2-content .tab-2-content-inner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+		align-items: center;
+		justify-content: center;
+	}
+	#tab-3-content .tab-3-content-inner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+		align-items: center;
+		justify-content: center;
+	}
+	#demo-post {
+		margin: 2% 0;
+		padding: 2%;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#helping-world:hover img {
+		filter: blur(4px);
+		transform: scale(1.2);
+	}
+}
